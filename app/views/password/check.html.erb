@@ -1,0 +1,21 @@
+<h1>Password Checker</h1>
+
+<hr/>
+<form action="check_password" method="get">
+  <input type="text" name="user"/>
+  <input type="text" name="password"/>
+  <input type="submit" value="Validate"/>
+</form>
+
+<br>
+Password is: <%= @password %>
+<br>
+<br>
+User is: <%= @user %>
+
+<br />
+
+
+<%= flash[:alert] %>
+<br>
+<br>
